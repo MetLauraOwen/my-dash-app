@@ -1,0 +1,44 @@
+name: iris_interactive
+channels:
+  - conda-forge
+dependencies:
+  - ffmpeg
+  - future
+  - iris=3.11.1
+  - jupyter
+  - jupyter-dash
+  - jupyterlab>=3
+  - metpy
+  - nltk
+  - numpy
+  - ncdata
+  - pandas
+  - pandoc
+  - panel
+  - watchfiles
+  - pygments
+  - hvplot
+  - geoviews
+  - bokeh  
+  - pip
+  - python
+  - python-dateutil
+  - scikit-learn
+  - scipy
+  - statsmodels
+  - xarray
+  - tensorflow
+  - pytorch
+  - keras
+  - fair
+  - mo_pack
+  - pip:
+    - cffi
+    - gnureadline
+    - plotly
+    - dash
+    - dill
+    - tzlocal
+    - seaborn
+    - salib
+    - rpy2
