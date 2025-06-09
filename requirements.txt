@@ -12,3 +12,4 @@ shapely
 scitools-iris
 cf-units
 cartopy
+pyreadr
