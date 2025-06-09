@@ -1,2 +1,15 @@
-numpy==2.2.6
-pandas==2.2.3
+dash
+gunicorn
+pandas
+numpy
+matplotlib
+scipy
+plotly
+xarray
+netCDF4
+pyproj
+shapely
+rpy2
+scitools-iris
+cf-units
+cartopy
