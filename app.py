@@ -11,8 +11,8 @@ import pickle
 
 # %%
 #paths
-fig_path = Path("/figures")
-df_path = Path("/dataframes")
+fig_path = Path("figures")
+df_path = Path("dataframes")
 
 #read in UK wide dfs
 duration_df = pd.read_csv(df_path / "duration_df.csv")
@@ -23,11 +23,11 @@ mseverity_df = pd.read_csv(df_path / "mseverity_df.csv")
 peakvalue_df = pd.read_csv(df_path / "peakvalue_df.csv")
 
 #read in city dfs 
-with open("../dataframes/duration_dataframes_dict.pkl", "rb") as file:
+with open("dataframes/duration_dataframes_dict.pkl", "rb") as file:
     duration_dataframes = pickle.load(file)
-with open("../dataframes/th_mhwt_dataframes_dict.pkl", "rb") as file:
+with open("dataframes/th_mhwt_dataframes_dict.pkl", "rb") as file:
     th_mhwt_dataframes = pickle.load(file)
-with open("../dataframes/levxally_dataframes_dict.pkl", "rb") as file:
+with open("dataframes/levxally_dataframes_dict.pkl", "rb") as file:
     severity_dataframes = pickle.load(file)
     
 #read in city coord df and get wanted cities
@@ -45,10 +45,6 @@ for city, df in duration_dataframes.items():
     df["nduration"] /= 100000
 
 RPy = [0.5, 2, 5, 10, 20, 50, 100, 200, 500, 1000]
-
-
-# print(tha_df["xco"].unique())
-# print(tha_df["yco"].unique())
 
 # %%
 def find_free_port(start_port=8050, max_port=8100):
