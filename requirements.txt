@@ -9,7 +9,6 @@ xarray
 netCDF4
 pyproj
 shapely
-rpy2
 scitools-iris
 cf-units
 cartopy
