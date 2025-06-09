@@ -31,7 +31,7 @@ with open("dataframes/levxally_dataframes_dict.pkl", "rb") as file:
     severity_dataframes = pickle.load(file)
     
 #read in city coord df and get wanted cities
-result = pyreadr.read_r('dataframes/UK_top30_cities.Rda')
+result = pyreadr.read_r('dataframes/UK_top30_cities.RData')
 city_df = result['city_df']
 city_names_in_dataframes = set(duration_dataframes.keys())
 city_df = city_df[city_df['city'].isin(city_names_in_dataframes)].copy()
