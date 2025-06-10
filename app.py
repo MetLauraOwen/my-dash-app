@@ -227,6 +227,7 @@ def update_peakvalue_plot(city_name, rp_label):
 
 # %%
 app = dash.Dash(__name__)
+server = app.server  # Expose the Flask server for Gunicorn
 
 app.layout = html.Div([
     html.H1("Heatwave Metrics: 1980 vs 2080"),
