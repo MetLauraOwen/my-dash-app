@@ -8,6 +8,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pyreadr
 import pickle
+import os
 
 # %%
 #paths
@@ -450,10 +451,10 @@ def update_timeseries(clickData, dropdown_city, selected_duration, selected_rp, 
         return update_peakvalue_plot(city_name, rp_label)
 
 if __name__ == '__main__':
-    free_port = find_free_port()
-    url = f"http://127.0.0.1:{free_port}"
+    port = int(os.environ.get("PORT", 8050))  # Use PORT from environment or default to 8050
+    url = f"http://0.0.0.0:{port}"
     print(f"Starting Dash app at: {url}")
-    app.run(debug=True, port=free_port)
+    app.run(debug=True, host="0.0.0.0", port=port)
 
 
 
