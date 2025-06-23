@@ -34,4 +34,28 @@ cd hackathon_may_2025
 
 ## Usage
 
-Explain how to use your project. Provide examples if possible.
+To run the interactive plotting on your own computer:
+python plot_UK_city_diff.ipynb
+This will generate a link at the bottom of the script to view your interactive plot.
+
+To run the interactive plotting using render to create a weblink that is sharable you need to use render:
+1) Create a Web Service on Render
+Go to https://render.com:
+Sign up/log in
+Click "New Web Service"
+Choose "Deploy from GitHub"
+Select your repo (https://github.com/MetLauraOwen/my-dash-app)
+
+Fill in:
+Environment: Python
+Build Command: pip install -r requirements.txt
+Start Command: gunicorn app:server
+(Assuming your file is app.py and your Dash app is app = dash.Dash(__name__).)
+Instance Type: Starter (Free)
+Click "Create Web Service"
+
+Wait for deployment
+First build may take a couple of minutes.
+You’ll get a public URL like https://my-dash-app.onrender.com.
+Your Dash app is now live!
+
