@@ -30,7 +30,8 @@ git clone https://github.com/your-username/my-dash-app.git
 cd my-dash-app
 ```
 
-### Run Locally
+### To run Locally you need to get the following conda enviro
+
 cd to your directory you use for yaml files
 ```bash
 cp ~david.sexton/my_conda/iris_interactive.yaml .
@@ -44,7 +45,6 @@ conda activate iris_interactive
 ## Usage
 
 ### Run Locally
-
 To run the interactive plotting on your own computer:
 
 ```bash
