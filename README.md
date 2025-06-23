@@ -28,9 +28,17 @@ See requirements.txt
 # Clone the repository
 git clone https://github.com/your-username/my-dash-app.git
 cd my-dash-app
+```
 
-# Install dependencies
-# See requirements.txt 
+### Run Locally
+cd to your directory you use for yaml files
+```bash
+cp ~david.sexton/my_conda/iris_interactive.yaml .
+module load R
+conda env create -f iris_interactive.yaml
+ 
+#Then you can run:
+conda activate iris_interactive
 ```
 
 ## Usage
