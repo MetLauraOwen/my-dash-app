@@ -8,7 +8,7 @@ This project was created durng the CPP hackathon event May 2025.
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Extra Info](#info)
+- [Extra Info](#extra-info)
 
 ## Project Overview
 
