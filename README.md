@@ -1,6 +1,6 @@
-# Hackathon May 2025
+# Dash App - interactive graphics for Hotdays from Hackathon May 2025
 
-Welcome to the Hackathon May 2025 repository! This project was created as part of a collaborative hackathon event.
+This project was created durng the CPP hackathon event May 2025.
 
 ## Table of Contents
 
@@ -8,6 +8,7 @@ Welcome to the Hackathon May 2025 repository! This project was created as part o
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Extra Info](#info)
 
 ## Project Overview
 
@@ -72,4 +73,10 @@ This will generate a link at the bottom of the script to view your interactive p
      `https://my-dash-app.onrender.com`
 
 Your Dash app is now live!
+
+## Extra Info
+
+- The dataframes needed to run the plotting are in /dataframes
+- These were created using the scripts create_city_dfs.ipynb, create_city_dfs_NEWMEANS.ipynb (just an updated file that generated means within the script - this is default), create_UK_dfs.ipynb.
+- The above scripts used data output from HOTdays that Laura generated from Simons' /data/users/laura.owen/extremes/heatwaves/HadUKGrid/dur-clim/CPM5km/v2/UK/EEE/SimHD/Observed/ files using the scripts /home/users/laura.owen/uk-heatwave-climatology-duration/sim-HOTdays/laura_probs.R and laura_probs_mean.R
 
