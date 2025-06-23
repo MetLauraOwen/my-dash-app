@@ -26,8 +26,8 @@ See requirements.txt
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/hackathon_may_2025.git
-cd hackathon_may_2025
+git clone https://github.com/your-username/my-dash-app.git
+cd my-dash-app
 
 # Install dependencies
 # See requirements.txt 
