@@ -80,3 +80,5 @@ Your Dash app is now live!
 - These were created using the scripts create_city_dfs.ipynb, create_city_dfs_NEWMEANS.ipynb (just an updated file that generated means within the script - this is default), create_UK_dfs.ipynb.
 - The above scripts used data output from HOTdays that Laura generated from Simons' /data/users/laura.owen/extremes/heatwaves/HadUKGrid/dur-clim/CPM5km/v2/UK/EEE/SimHD/Observed/ files using the scripts /home/users/laura.owen/uk-heatwave-climatology-duration/sim-HOTdays/laura_probs.R and laura_probs_mean.R
 
+- plot_compare_versions.ipynb is a W.I.P script where you can read in the new HOTdays output we recently generated (with the spatial make-stationary part) to compare with the results we submitted in the November report.
+
