@@ -34,12 +34,16 @@ cd my-dash-app
 
 cd to your directory you use for yaml files
 ```bash
-cp ~david.sexton/my_conda/iris_interactive.yaml .
-module load R
-conda env create -f iris_interactive.yaml
+# cp ~david.sexton/my_conda/iris_interactive.yaml .
+# module load R
+# conda env create -f iris_interactive.yaml
+conda create --name interactive --clone /data/users/david.sexton/.conda/envs/iris_interactive
  
 #Then you can run:
 conda activate iris_interactive
+
+#install pyreadr
+conda install pyreadr
 ```
 
 ## Usage
